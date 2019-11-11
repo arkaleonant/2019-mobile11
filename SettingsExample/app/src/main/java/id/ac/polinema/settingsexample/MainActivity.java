@@ -16,7 +16,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import id.ac.polinema.settingsexample.fragments.AdvancedFragment;
 import id.ac.polinema.settingsexample.fragments.DialogsFragment;
 import id.ac.polinema.settingsexample.fragments.HomeFragment;
-import id.ac.polinema.settingsexample.fragments.SettingsFragment;
+import id.ac.polinema.settingsexample.fragments.settingsFragment;
 import id.ac.polinema.settingsexample.fragments.WidgetsFragment;
 
 public class MainActivity extends AppCompatActivity
@@ -53,6 +53,8 @@ public class MainActivity extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
 			// TODO: open settings here using openFragment()
+            openFragment(new settingsFragment());
+
             return true;
         }
 
